@@ -247,6 +247,8 @@ void cfreset(FILE*fd, const char*path)
       cflloc.first_line = 1;
 }
 
+char *current_file = 0;
+
 /*
  * Modern version of flex (>=2.5.9) can clean up the scanner data.
  */
